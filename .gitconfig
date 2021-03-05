@@ -1,8 +1,10 @@
 [user]
 	email = 33615041+SeanCassiere@users.noreply.github.com
-	name = Sean Cassiere
+	name = SeanCassiere
 	signingkey = F17076B49F553040
 [core]
 	editor = code --wait
 [commit]
 	gpgsign = true
+[gpg]
+	program = gpg2
