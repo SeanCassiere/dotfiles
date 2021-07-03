@@ -1,5 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:/usr/local/bin:
+
+# Path for Accessing Postgress.app bin for pgql db
+export PATH=$PATH:/opt/homebrew/var/postgres
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/seanc/.oh-my-zsh"
@@ -108,3 +111,4 @@ export GUILE_LOAD_PATH="/opt/homebrew/share/guile/site/3.0"
 export GUILE_LOAD_COMPILED_PATH="/opt/homebrew/lib/guile/3.0/site-ccache"
 export GUILE_SYSTEM_EXTENSIONS_PATH="/opt/homebrew/lib/guile/3.0/extensions"
 export GUILE_TLS_CERTIFICATE_DIRECTORY=/usr/local/etc/gnutls/
+export PATH=$PATH:/Users/seanc/.nexustools
