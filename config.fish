@@ -5,6 +5,11 @@ set -U fish_greeting
 alias ..='cd ..'
 alias ...='cd ../..'
 
+## Ls command formatted showing hidden files
+function lsa
+    ls -lah $argv 
+end
+
 ## mkdir and cd into the directory
 function mkdir-cd
     mkdir $argv && cd $argv
