@@ -57,3 +57,9 @@ brew bundle --file ~/.dotfiles/Brewfile
 
 cd ~/.dotfiles && brew bundle
 ```
+
+## 6. Set up Fish Shell
+
+Install the Fish Shell using the installer from [https://fishshell.com](https://fishshell.com).
+
+Copy the `config.fish` file to `/Users/{USERNAME}/.config/fish/config.fish`.
