@@ -11,7 +11,7 @@ function lsa
 end
 
 ## mkdir and cd into the directory
-function mkdir-cd
+function mkdircd
     mkdir $argv && cd $argv
 end
 
@@ -55,6 +55,7 @@ function _is_git_dirty
 end
 
 function fish_prompt
+  set -l current_user (whoami)
   set -l last_command_status $status
   
   set -l fish     "⋊>"
@@ -80,9 +81,9 @@ function fish_prompt
   end
 
   if test $last_command_status -eq 0
-    echo -n -s $success_color $fish $normal ' ' $cwd $git_info $git_dirty $normal ' '
+    echo -n -s $current_user ' ' $success_color $fish $normal ' ' $cwd $git_info $git_dirty $normal ' '
   else
-    echo -n -s $error_color $fish $normal ' ' $cwd $git_info $git_dirty $normal ' '
+    echo -n -s $current_user ' ' $error_color $fish $normal ' ' $cwd $git_info $git_dirty $normal ' '
   end
 
 end
@@ -91,3 +92,4 @@ end
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
+fish_add_path /opt/homebrew/sbin
