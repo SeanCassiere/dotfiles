@@ -1,3 +1,4 @@
 {
-	"cSpell.words": ["nvim"]
+	"cSpell.words": ["nvim"],
+	"conventionalCommits.scopes": ["nvim", "repo"]
 }
