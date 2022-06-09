@@ -7,6 +7,7 @@ set autoindent
 set inccommand=split
 set mouse=a
 set number
+set relativenumber
 set splitbelow splitright
 set title
 set wildmenu
