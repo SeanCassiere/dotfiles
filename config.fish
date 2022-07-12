@@ -93,3 +93,5 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 fish_add_path /opt/homebrew/sbin
+## https://riptutorial.com/node-js/example/17273/installing-with-node-version-manager-under-fish-shell-with-oh-my-fish-
+fish_add_path ~/.nvm
