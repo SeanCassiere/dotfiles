@@ -1,4 +1,4 @@
-# .dotfiles repo
+# dot-files repo
 
 Steps to bootstrap a new Mac
 
@@ -22,10 +22,10 @@ no-reply email: `33615041+SeanCassiere@users.noreply.github.com`
 
 ```
 # Use SSH (if set up)...
-git clone git@github.com:SeanCassiere/dotfiles.git ~/.dotfiles
+git clone git@github.com:SeanCassiere/dotfiles.git ~/dot-files
 
 # ...or use HTTPS and switch remotes later.
-git clone https://github.com/SeanCassiere/dotfiles.git ~/.dotfiles
+git clone https://github.com/SeanCassiere/dotfiles.git ~/dot-files
 ```
 
 ## 4. Create symlinks in the Home directory to the real files in the repo.
@@ -34,11 +34,16 @@ git clone https://github.com/SeanCassiere/dotfiles.git ~/.dotfiles
 * There are better and less manual ways to do this;
 * Investigate install scripts and bootstrapping tools.
 
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dot-files/.zshrc ~/.zshrc
 ```
 
-## 5. Install Homebrew, followed by the software listed in the Brewfile.
+## 5. Set up Fish Shell
+
+Install the Fish Shell using the installer from [https://fishshell.com](https://fishshell.com).
+
+Copy the `config.fish` file to `/Users/{USERNAME}/.config/fish/config.fish` or create a symlink.
+
+## 6. Install Homebrew, followed by the software listed in the Brewfile.
 
 ```
 # These could also be in an install script.
@@ -50,16 +55,16 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
 # Then pass in the Brewfile location...
 
-brew bundle --file ~/.dotfiles/Brewfile
+brew bundle --file ~/dot-files/Brewfile
 
 
 # ...or move to the directory first.
 
-cd ~/.dotfiles && brew bundle
+cd ~/dot-files && brew bundle
 ```
 
-## 6. Set up Fish Shell
+## 7. Install Node.JS using NVM
 
-Install the Fish Shell using the installer from [https://fishshell.com](https://fishshell.com).
+Install Node using NVM (Node Version Manager).
 
-Copy the `config.fish` file to `/Users/{USERNAME}/.config/fish/config.fish`.
+Instructions for this can be found [here](https://nodejs.dev/)

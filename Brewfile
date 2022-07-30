@@ -5,6 +5,6 @@ tap "homebrew/services"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
 # Platform built on V8 to build network applications
-brew "node"
+# brew "node"
 # Watch files and take action when they change
 brew "watchman"
