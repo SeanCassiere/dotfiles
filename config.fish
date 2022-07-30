@@ -27,11 +27,6 @@ function copy
     end
 end
 
-## Postgress rename Database name
-function renamedb --argument from to
-    echo "alter database \"$from\" rename to \"$to\"" | psql -d template1
-end
-
 ## Mac-Only, print the Wifi network name
 function wifi-network-name
     /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'
