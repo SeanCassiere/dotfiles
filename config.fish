@@ -5,6 +5,11 @@ set -U fish_greeting
 alias ..='cd ..'
 alias ...='cd ../..'
 
+## Git delete branch shortcut
+function gbd
+    git branch -D $argv
+end
+
 ## Ls command formatted showing hidden files
 function lsa
     ls -lah $argv 
