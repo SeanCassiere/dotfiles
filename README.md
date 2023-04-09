@@ -34,7 +34,9 @@ git clone https://github.com/SeanCassiere/dotfiles.git ~/dot-files
 * There are better and less manual ways to do this;
 * Investigate install scripts and bootstrapping tools.
 
-ln -s ~/dot-files/.zshrc ~/.zshrc
+ln -s ~/dot-files/.zshrc ~/.zshrc # -- file symlink
+ln -s ~/dot-files/.config/fish/config.fish ~/.config/fish/config.fish
+ln -s ~/dot-files/.config/nvim ~/.config/nvim # -- folder symlink
 ```
 
 ## 5. Set up Fish Shell
