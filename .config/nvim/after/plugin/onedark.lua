@@ -1,8 +1,6 @@
 local status, onedark = pcall(require, 'onedark')
 if (not status) then return end
 
-vim.cmd [[colorscheme onedark]]
-
 onedark.setup({
   style = 'darker',
   -- transparent = true,
