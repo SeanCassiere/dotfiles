@@ -15,3 +15,6 @@ end
 if is_windows then
   require("seancassiere.windows")
 end
+if is_wsl then
+  require("seancassiere.wsl")
+end
