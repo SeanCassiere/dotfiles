@@ -13,6 +13,13 @@ local fb_actions = require "telescope".extensions.file_browser.actions
 -- Setup telescope
 telescope.setup {
   defaults = {
+    layout_strategy = 'horizontal', -- horizontal or vertical
+    layout_config = {
+      horizontal = {
+        prompt_position = 'top',
+      },
+    },
+    sorting_strategy = 'ascending',
     mappings = {
       n = {
         ["q"] = actions.close
@@ -78,10 +85,10 @@ vim.keymap.set("n", "sf", function()
   telescope.extensions.file_browser.file_browser({
     path = "%:p:h",
     cwd = telescope_buffer_dir(),
-    respect_gitignore = false,
-    hidden = true,
+    respect_gitignore = false, -- Show all files even stuff in the .gitignore
+    hidden = true,             -- Show hidden files
     grouped = true,
-    previewer = false,
+    previewer = true,
     initial_mode = "normal",
     layout_config = { height = 40 }
   })
