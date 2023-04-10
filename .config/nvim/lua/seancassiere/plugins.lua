@@ -13,8 +13,10 @@ packer.startup(function(use)
 
   use 'nvim-lualine/lualine.nvim'     -- Statusline
   use 'nvim-lua/plenary.nvim'         -- Common utilities
+
   use 'nvim-telescope/telescope.nvim' -- Search
   use 'nvim-telescope/telescope-file-browser.nvim'
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
   use 'nvim-tree/nvim-web-devicons' -- Web Dev Icons
 

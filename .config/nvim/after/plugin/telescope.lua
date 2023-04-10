@@ -53,6 +53,7 @@ telescope.setup {
 }
 
 telescope.load_extension("file_browser")
+telescope.load_extension("fzf")
 
 -- Keybindings
 vim.keymap.set("n", "<leader>pf", builtin.find_files, {})

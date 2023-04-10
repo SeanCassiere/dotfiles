@@ -16,7 +16,6 @@ ts.setup {
     "tsx",
     "toml",
     "fish",
-    "php",
     "json",
     "yaml",
     "swift",
@@ -28,12 +27,15 @@ ts.setup {
     "bash",
     "dockerfile",
     "scss",
-    "prisma"
+    "prisma",
+    "gitignore",
+    "vim"
   },
   autotag = {
     enable = true,
   },
-  sync_installed = true
+  sync_installed = true,
+  auto_install = true,
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
