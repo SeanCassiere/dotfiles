@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/Users/seanc/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["NeoSolarized.nvim"] = {
-    loaded = true,
-    path = "/Users/seanc/.local/share/nvim/site/pack/packer/start/NeoSolarized.nvim",
-    url = "https://github.com/Tsuzat/NeoSolarized.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/seanc/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -183,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/seanc/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/Users/seanc/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

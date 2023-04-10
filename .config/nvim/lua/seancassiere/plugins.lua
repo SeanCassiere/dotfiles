@@ -8,7 +8,9 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'Tsuzat/NeoSolarized.nvim'
+  -- use 'Tsuzat/NeoSolarized.nvim' -- NeoSolarized theme
+  use 'navarasu/onedark.nvim'         -- OneDark theme
+
   use 'nvim-lualine/lualine.nvim'     -- Statusline
   use 'nvim-lua/plenary.nvim'         -- Common utilities
   use 'nvim-telescope/telescope.nvim' -- Search

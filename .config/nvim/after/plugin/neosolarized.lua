@@ -1,10 +1,10 @@
-vim.cmd [[colorscheme NeoSolarized]]
-
 local ok_status, n = pcall(require, "NeoSolarized")
 
 if not ok_status then
   return
 end
+
+vim.cmd [[colorscheme NeoSolarized]]
 
 n.setup({
   style = 'dark',
