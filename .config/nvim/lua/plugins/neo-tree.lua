@@ -1,6 +1,7 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  opts = {
+  cmd = "Neotree",
+  config = {
     filesystem = {
       filtered_items = {
         visible = true,
