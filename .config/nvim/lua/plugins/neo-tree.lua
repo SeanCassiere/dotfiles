@@ -4,6 +4,7 @@ return {
   config = {
     filesystem = {
       filtered_items = {
+        follow_current_file = true,
         visible = true,
       },
     },
