@@ -10,3 +10,5 @@
 	program = gpg2
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
