@@ -23,9 +23,9 @@ function gcob
     git checkout -b $argv
 end
 
-## Git reset hard shortcut
-function grh
-    git reset --hard $argv
+## Git discard unstages changes
+function gd
+    git restore $argv
 end
 
 ## Ls command formatted showing hidden files
