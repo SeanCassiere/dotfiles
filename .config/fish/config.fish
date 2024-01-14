@@ -7,6 +7,7 @@ set ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX yes
 ## Navigation alias
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 
 ## Git delete local branch shortcut
 function gbd
