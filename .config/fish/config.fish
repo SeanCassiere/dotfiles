@@ -4,10 +4,12 @@ set -U fish_greeting
 ## Use Tmux integrations
 set ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX yes
 
-## Navigation alias
+## Aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias c='clear'
+alias e='exit'
 
 ## Git delete local branch shortcut
 function gbd
