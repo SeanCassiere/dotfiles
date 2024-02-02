@@ -9,6 +9,9 @@
       },
       "homebrew/services": {
         "revision": "cec47abdacbad1d17c5dedc31193c859c23a8c05"
+      },
+      "oven-sh/bun": {
+        "revision": "ed65e447c05e5d77b60413fcd70eab4164c6fa6c"
       }
     },
     "brew": {
@@ -319,6 +322,10 @@
             }
           }
         }
+      },
+      "bun": {
+        "version": "1.0.25",
+        "bottle": false
       }
     }
   },
