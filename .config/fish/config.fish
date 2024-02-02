@@ -118,3 +118,7 @@ fish_add_path /opt/homebrew/sbin
 fish_add_path ~/.nvm
 fish_add_path /Users/seanc/Library/Android/sdk/platform-tools/
 test -e {$HOME}/.iterm2_shell_integration.fish; and source {$HOME}/.iterm2_shell_integration.fish
+fish_add_path /opt/homebrew/opt/mysql-client/bin
+set -gx LDFLAGS -L/opt/homebrew/opt/mysql-client/lib
+set -gx CPPFLAGS -I/opt/homebrew/opt/mysql-client/include
+set -gx PKG_CONFIG_PATH /opt/homebrew/opt/mysql-client/lib/pkgconfig
