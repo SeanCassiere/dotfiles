@@ -1,3 +1,7 @@
-theme = "Dracula"
-font-family = "JetBrainsMono Nerd Font Mono"
-shell-integration = "fish"
+# Trigger the config reload by using "CMD + SHIFT + ,"
+
+theme = Dracula
+
+font-family = JetBrainsMono Nerd Font Mono, Noto Sans CJK JP
+
+shell-integration = fish
