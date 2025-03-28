@@ -126,4 +126,3 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
 set -U fish_user_paths (brew --prefix)/bin $fish_user_paths
 export GPG_TTY=(tty)
-
