@@ -122,3 +122,8 @@ fish_add_path /opt/homebrew/opt/mysql-client/bin
 set -gx LDFLAGS -L/opt/homebrew/opt/mysql-client/lib
 set -gx CPPFLAGS -I/opt/homebrew/opt/mysql-client/include
 set -gx PKG_CONFIG_PATH /opt/homebrew/opt/mysql-client/lib/pkgconfig
+eval "$(/opt/homebrew/bin/brew shellenv)"
+set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
+set -U fish_user_paths (brew --prefix)/bin $fish_user_paths
+export GPG_TTY=(tty)
+
