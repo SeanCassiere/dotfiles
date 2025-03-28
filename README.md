@@ -45,6 +45,8 @@ Install the Fish Shell using the installer from [https://fishshell.com](https://
 
 Copy the `config.fish` file to `/Users/{USERNAME}/.config/fish/config.fish` or create a symlink.
 
+Also, setup Oh-my-fish - https://riptutorial.com/node-js/example/17273/installing-with-node-version-manager-under-fish-shell-with-oh-my-fish-
+
 ## 6. Install Homebrew, followed by the software listed in the Brewfile.
 
 ```
