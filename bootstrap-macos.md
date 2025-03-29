@@ -269,3 +269,15 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc # -- file symlink
 ln -s ~/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -s ~/dotfiles/.config/nvim ~/.config/nvim # -- folder symlink
 ```
+
+## 8. Homebrew Bundle Install
+
+Homebrew Bundle is a Homebrew extension that allows you to manage your Homebrew packages using a `Brewfile`. This is useful for keeping track of the packages you have installed and for easily installing them on a new machine.
+
+Install Homebrew Bundle at `~/dotfiles/Brewfile` using the following command:
+
+```bash
+brew bundle
+```
+
+This will install all the packages listed in the `Brewfile`.
