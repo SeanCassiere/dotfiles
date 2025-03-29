@@ -265,9 +265,8 @@ This script will create symlinks for all the dotfiles in the `dotfiles` director
 You can also create symlinks manually if you prefer. Here are some examples:
 
 ```bash
-ln -s ~/dotfiles/.zshrc ~/.zshrc # -- file symlink
-ln -s ~/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
-ln -s ~/dotfiles/.config/nvim ~/.config/nvim # -- folder symlink
+ln -s ~/dotfiles/zshrc ~/.zshrc # -- file symlink
+ln -s ~/dotfiles/config/fish ~/.config/fish # -- folder symlink
 ```
 
 ## 8. Homebrew Bundle Install
