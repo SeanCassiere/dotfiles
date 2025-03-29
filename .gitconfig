@@ -5,7 +5,10 @@
 [core]
 	editor = code --wait
 [commit]
+  gpsign = true
 	gpgsign = true
+[tag]
+  gpgSign = true
 [gpg]
 	program = gpg
 [init]
