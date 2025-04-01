@@ -10,3 +10,9 @@ brew "fzf"
 brew "tmux"
 
 brew "pnpm"
+
+# Tap the lazygit repository
+tap "jesseduffield/lazygit"
+
+# Install Lazygit
+brew "lazygit"
