@@ -25,3 +25,5 @@
   rmuntracked = clean -df
   undo = reset --soft HEAD^
   unstage = reset HEAD --
+  lol = log --oneline --decorate
+  graph = log --oneline --graph --decorate
