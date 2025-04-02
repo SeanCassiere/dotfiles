@@ -16,3 +16,6 @@ tap "jesseduffield/lazygit"
 
 # Install Lazygit
 brew "lazygit"
+
+# Install Yarn
+brew "yarn"
