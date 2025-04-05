@@ -23,6 +23,7 @@
 	process = git-lfs filter-process
 	required = true
 [alias]
+  st = status -s
   discard = reset HEAD --hard
   rmuntracked = clean -df
   undo = reset --soft HEAD^
