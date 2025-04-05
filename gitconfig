@@ -11,12 +11,32 @@
   autocorrect = true
 [tag]
   gpgSign = true
+  sort = version:refname
 [gpg]
 	program = gpg
 [init]
 	defaultBranch = main
+[branch]
+  sort = -committerdate
 [push]
 	autoSetupRemote = true
+[fetch]
+  prune = true
+[rerere]
+  enabled = true
+  autoupdate = true
+[column]
+  ui = auto
+[diff]
+  algorithm = patience
+  #algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
+[rebase]
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
