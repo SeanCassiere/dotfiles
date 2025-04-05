@@ -7,6 +7,8 @@
 [commit]
   gpsign = true
 	gpgsign = true
+[help]
+  autocorrect = true
 [tag]
   gpgSign = true
 [gpg]
