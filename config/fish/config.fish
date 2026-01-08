@@ -10,6 +10,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias c='clear'
 alias e='exit'
+alias lg='lazygit'
 
 ## Git delete local branch shortcut
 function gbd
@@ -126,3 +127,17 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
 set -U fish_user_paths (brew --prefix)/bin $fish_user_paths
 export GPG_TTY=(tty)
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+# pnpm
+set -gx PNPM_HOME /Users/seanc/Library/pnpm
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
+
+# opencode
+fish_add_path /Users/seanc/.opencode/bin
